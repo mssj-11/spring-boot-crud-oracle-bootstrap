@@ -12,20 +12,19 @@
 </head>
 <body>
 
-	<nav class="navbar bg-dark navbar-dark">
+	<nav class="navbar bg-danger navbar-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Logo" width="40"
-					height="40" class="d-inline-block align-text-top">
-				Registro estudiantes
-			</a>
+			<a class="navbar-brand" href="#"><h2>
+		      <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+		      Registro Estudiantes</h2>
+		    </a>
 		</div>
 	</nav>
 
 
 
 	<!-- Mostrar el Objeto -->
-	<div class="container">
+	<div class="container"><br>
 		<div class="title text-center">
 			<h1>Registrar</h1>
 		</div>
@@ -39,8 +38,8 @@
 					<input type="text" class="form-control" name="name" th:field="*{name}" id="nombre" placeholder="Ingresa tu Nombre">
 				</div>
 				<div class="mb-3">
-					<label for="apellidos" class="form-label">Direccion:</label>
-					<input type="text" class="form-control" name="address" th:field="*{address}" id="apellidos" placeholder="Ingresa tus Apellidos">
+					<label for="apellidos" class="form-label">Dirección:</label>
+					<input type="text" class="form-control" name="address" th:field="*{address}" id="apellidos" placeholder="Ingresa tus Dirección">
 				</div>
 				<div class="mb-3">
 					<label for="email" class="form-label">Correo:</label>
@@ -54,6 +53,7 @@
 		</div>
 		<div class="col-md-3"></div>
 	</div>
+	
 	
 
 </body>
