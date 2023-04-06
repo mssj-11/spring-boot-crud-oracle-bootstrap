@@ -1,24 +1,24 @@
 package com.mss.springboot.web.app;
-
+/*
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.CommandLineRunner;*/
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+/*
 import com.mss.springboot.web.app.entity.Student;
-import com.mss.springboot.web.app.repo.StudentRepo;
+import com.mss.springboot.web.app.repo.StudentRepo;*/
 
 @SpringBootApplication
-public class SpringBootCrudOracleBootstrapApplication implements CommandLineRunner{
-	
+public class SpringBootCrudOracleBootstrapApplication{	// implements CommandLineRunner
+	/*
 	@Autowired
-	private StudentRepo repo;
+	private StudentRepo repo;*/
 	
 	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootCrudOracleBootstrapApplication.class, args);
 	}
-
+	/*
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
@@ -33,7 +33,7 @@ public class SpringBootCrudOracleBootstrapApplication implements CommandLineRunn
 		repo.save(s3);
 		repo.save(s4);
 		repo.save(s5);
-	}
+	}*/
 	
 	
 
