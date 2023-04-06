@@ -1,5 +1,6 @@
 package com.mss.springboot.web.app.entity;
 
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,8 +29,7 @@ public class Student {
 	
 	
 	//	Constructor
-	public Student(int id, String name, String address, String email) {
-		this.id = id;
+	public Student(String name, String address, String email) {
 		this.name = name;
 		this.address = address;
 		this.email = email;
