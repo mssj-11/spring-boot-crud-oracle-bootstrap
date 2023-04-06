@@ -12,32 +12,27 @@
 </head>
 <body>
 
-	<nav class="navbar bg-dark navbar-dark">
+	<nav class="navbar bg-danger navbar-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Logo" width="40"
-					height="40" class="d-inline-block align-text-top">
-				Editar estudiante
-			</a>
+			<a class="navbar-brand" href="#"><h2>
+		      <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+		      Editar Estudiantes</h2>
+		    </a>
 		</div>
 	</nav>
 
 
-
 	<!-- Mostrar el Objeto -->
-	<div class="container">
+	<div class="container"><br>
 		<div class="title text-center">
 			<h1>Modificar Estudiante</h1>
-		</div>
+		</div><br>
 		
 		<div class="row">
 		<div class="col-md-3"></div>
 		<div class="col-md-6 center">
 			<form class="form" th:action="@{/saveStudent}" th:object="${student}" method="post">
-				<div class="mb-3">
-					<label for="id" class="form-label">ID:</label>
-					<input type="text" class="form-control" th:field="*{id}">
-				</div>
+				
 				<div class="mb-3">
 					<label for="nombre" class="form-label">Nombre Completo:</label>
 					<input type="text" class="form-control" name="name" th:field="*{name}" id="nombre" placeholder="Ingresa tu Nombre">
@@ -58,6 +53,7 @@
 		</div>
 		<div class="col-md-3"></div>
 	</div>
+	
 	
 	
 </body>
