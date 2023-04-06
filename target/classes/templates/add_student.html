@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<!-- Añadiendo namespace -->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap 5 CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<title>Crear Estudiante</title><link rel="icon" href="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"></link>
+</head>
+<body>
+
+	<nav class="navbar bg-dark navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Logo" width="40"
+					height="40" class="d-inline-block align-text-top">
+				Registro estudiantes
+			</a>
+		</div>
+	</nav>
+
+
+
+	<!-- Mostrar el Objeto -->
+	<div class="container">
+		<div class="title text-center">
+			<h1>Registrar</h1>
+		</div>
+		
+		<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6 center">
+			<form class="form" th:action="@{/students}" th:object="${student}" method="post">
+				<div class="mb-3">
+					<label for="nombre" class="form-label">Nombre:</label>
+					<input type="text" class="form-control" name="nombre" th:field="*{name}" id="nombre" placeholder="Ingresa tu Nombre">
+				</div>
+				<div class="mb-3">
+					<label for="apellidos" class="form-label">Apellidos:</label>
+					<input type="text" class="form-control" name="apellidos" th:field="*{address}" id="apellidos" placeholder="Ingresa tus Apellidos">
+				</div>
+				<div class="mb-3">
+					<label for="email" class="form-label">Correo:</label>
+					<input type="email" class="form-control" name="email" th:field="*{email}" id="email" placeholder="name@example.com">
+				</div>
+				<br>
+				<button type="submit" class="btn btn-success">Guardar</button>
+				<a th:href="@{/students}" class="btn btn-dark">Cancelar</a>
+			</form>
+		</div>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+	
+
+</body>
+</html>

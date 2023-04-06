@@ -14,14 +14,20 @@ public class StudentController {
 	@Autowired
 	private StudentRepo repo;
 	
-	@GetMapping("/")
+	@GetMapping({"/students", "/"})
 	public String homePage(Model model) {
 		model.addAttribute("students", repo.findAll());
-		return "home";
+		
+		return "index";
 	}
 	
 	
-	
+	//	New Student
+	@GetMapping("/students/new")
+	public String newStudent() {
+		
+		return "add_student";
+	}
 	
 	
 	
