@@ -33,14 +33,14 @@
 		<div class="row">
 		<div class="col-md-3"></div>
 		<div class="col-md-6 center">
-			<form class="form" th:action="@{/students}" th:object="${student}" method="post">
+			<form class="form" th:action="@{/saveStudent}" th:object="${student}" method="post">
 				<div class="mb-3">
-					<label for="nombre" class="form-label">Nombre:</label>
-					<input type="text" class="form-control" name="nombre" th:field="*{name}" id="nombre" placeholder="Ingresa tu Nombre">
+					<label for="nombre" class="form-label">Nombre Completo:</label>
+					<input type="text" class="form-control" name="name" th:field="*{name}" id="nombre" placeholder="Ingresa tu Nombre">
 				</div>
 				<div class="mb-3">
-					<label for="apellidos" class="form-label">Apellidos:</label>
-					<input type="text" class="form-control" name="apellidos" th:field="*{address}" id="apellidos" placeholder="Ingresa tus Apellidos">
+					<label for="apellidos" class="form-label">Direccion:</label>
+					<input type="text" class="form-control" name="address" th:field="*{address}" id="apellidos" placeholder="Ingresa tus Apellidos">
 				</div>
 				<div class="mb-3">
 					<label for="email" class="form-label">Correo:</label>
@@ -48,7 +48,7 @@
 				</div>
 				<br>
 				<button type="submit" class="btn btn-success">Guardar</button>
-				<a th:href="@{/students}" class="btn btn-dark">Cancelar</a>
+				<a th:href="@{/}" class="btn btn-dark">Cancelar</a>
 			</form>
 		</div>
 		</div>
