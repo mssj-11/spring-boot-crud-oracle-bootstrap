@@ -10,11 +10,11 @@
 </head>
 <body>
 	
-	<nav class="navbar bg-dark navbar-dark">
+	<nav class="navbar bg-danger navbar-dark">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">
+	    <a class="navbar-brand" href="#"><h2>
 	      <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
-	      Control estudiantes
+	      Estudiantes</h2>
 	    </a>
 	  </div>
 	</nav>
@@ -23,7 +23,7 @@
 	
 	<!-- Mostrar el Objeto -->
 	<div class="container">
-		<div><h1>Estudiantes</h1></div>
+		<br>
 			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
 				<a th:href="@{/students/new}" class="btn btn-success btn-lg me-md-2">Nuevo</a>
 			</div>
@@ -43,11 +43,11 @@
 			    	<td th:text="${student.id}"></td>
 			    	<td th:text="${student.name}"></td>
 			    	<td th:text="${student.address}"></td>
-			    	<td th:text="${student.email}"></td><!--
+			    	<td th:text="${student.email}"></td>
 			    	<td>
 			    		<a th:href="@{/students/edit/{id}(id=${student.id})}" class="btn btn-primary">Editar</a>
 			    		<a th:href="@{/students/delete/{id}(id=${student.id})}" class="btn btn-danger">Eliminar</a>
-			    	</td>-->
+			    	</td>
 			    </tr>
 			</tbody>
 		</table>
